@@ -1,3 +1,5 @@
+package main.scala
+
 /* Apache Spark Test*/
 import org.apache.spark.sql.SparkSession
 
