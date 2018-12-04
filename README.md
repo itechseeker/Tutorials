@@ -1,2 +1,2 @@
 # Apache-Spark
-This repository is used for projects related to Apache Spark
+This repository is used for projects related to Big Data Analysis
