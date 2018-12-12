@@ -59,7 +59,7 @@ public class KafkaSpark {
         // Take every word and return Tuple with (word,1)
         JavaPairDStream<String,Integer> wordMap = words.mapToPair((PairFunction<String, String, Integer>) word -> new Tuple2<>(word,1));
 
-        // Count occurance of each word
+        // Count occurrence of each word
         JavaPairDStream<String,Integer> wordCount = wordMap.reduceByKey((Function2<Integer, Integer, Integer>) (first, second) -> first+second);
 
         //Print the word count
