@@ -1,12 +1,12 @@
 package main.scala
 import org.apache.spark.sql.SparkSession
 
-object SparkSql {
+object DataFrameEx {
   def main(args: Array[String]): Unit = {
 
     //Define Spark Session
     val spark=SparkSession.builder()
-      .appName("Spark SQL Example")
+      .appName("Spark DataFrame Example")
       .config("spark.master","local")
       .getOrCreate()
 
