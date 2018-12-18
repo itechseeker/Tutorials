@@ -22,7 +22,7 @@ object DFProcessing {
   def main(args: Array[String]): Unit = {
 
     //The file path
-    val file="E:/WorkPlace/BigData/Data/train.csv"
+    val file="E:/Workspace/BigData/Data/train.csv"
 
     //Create a Data Frame
     var df=spark.read.format("csv")
@@ -41,10 +41,11 @@ object DFProcessing {
 
     //Check if there are duplicate rows
     df=df.dropDuplicates();
+    val totalRow=df.count()
     print("The number of row and columns after removing duplicate rows: ")
-    println(df.count()+","+df.columns.length)
+    println(totalRow+","+df.columns.length)
 
-    println("The type of each column variable")
+    println("\nThe type of each column variable")
     df.printSchema()
 
     //Initialize the value of role, level, keep and dtype
@@ -124,8 +125,7 @@ object DFProcessing {
       missing=df.filter(col(column) === -1).count()
       if(missing>0)
         {
-          //println(column+" has "+missing+" record ("+missing*100/df.count()+"%) with missing values")
-          println(column+" has "+missing+" record ("+Math.round(missing*100/df.count())+"%) with missing values")
+          println(column+" has "+missing+"/"+totalRow+" record with missing values")
           vars_with_missing.add(column)
         }
     }
@@ -134,6 +134,7 @@ object DFProcessing {
     //Checking the cardinality of the categorical variables
     //Get the list of categorical Variables
     val catDF = getVarDF("nominal",meta,df,false)
+    println("\nDistinct values of each categorical variable")
     for (column <- catDF.columns)
     {
       //Use groupby to get the distinct values
@@ -159,7 +160,6 @@ object DFProcessing {
         println(varName+" variables: ")
         varDF.describe().show()
       }
-
     return varDF
   }
 }
