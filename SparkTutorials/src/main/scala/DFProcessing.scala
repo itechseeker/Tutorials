@@ -4,14 +4,14 @@ import java.util
 
 import org.apache.spark.sql.types.{BooleanType, StringType, StructField, StructType}
 import org.apache.spark.sql.{DataFrame, Row, SparkSession}
-import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.functions._
 
 object DFProcessing {
 
   //Define Spark Session
   val spark=SparkSession.builder()
     .appName("Spark DataFrame Example")
-    .master("local")
+    .master("local[*]")
     .getOrCreate()
   //Implicit methods available in Scala for converting common Scala objects into DataFrames
   import spark.implicits._
@@ -137,11 +137,9 @@ object DFProcessing {
     println("\nDistinct values of each categorical variable")
     for (column <- catDF.columns)
     {
-      //Use groupby to get the distinct values
-      val tempDF=catDF.groupBy(column).count()
-
-      //Count the number of distinct values of each variable
-      println(column+" has "+tempDF.count()+" distinct values")
+      println(column+" has "+df.select(column).distinct().count()+" distinct values")
+      //We can also use the following code to get the distinct value
+      //println(df.agg(countDistinct(column)).first().get(0))
     }
   }
   def getVarDF(varName : String, metaDF: DataFrame, dataFrame: DataFrame, describe:Boolean =true) : DataFrame ={

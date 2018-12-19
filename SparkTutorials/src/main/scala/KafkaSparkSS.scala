@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 object KafkaSparkSS {
   def main(args: Array[String]): Unit = {
     //Define a Spark session
-    val spark=SparkSession.builder().appName("Spark Kafka Intergration using Strutured Streaming")
+    val spark=SparkSession.builder().appName("Spark Kafka Integration using Structured Streaming")
                                     .master("local")
                                     .getOrCreate()
 
