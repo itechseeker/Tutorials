@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86209c9a-c9dd-4560-9f6e-5fdb3a310c55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SimpleConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SparkTutorials/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DFProcessing$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DFProcessing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DataFrameEx$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DataFrameEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DataLoader$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/DataLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/KafkaSparkSS$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/KafkaSparkSS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/SparkCoreNLP$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/SparkCoreNLP$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/SparkCoreNLP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/WordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/WordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparkTutorials/target/classes/main/scala/test.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +30,12 @@
     <session id="-1381335019">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -93,7 +107,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="1513">
               <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
             </state>
           </provider>
@@ -178,7 +192,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544591660441" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SparkTutorials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -274,7 +288,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,7 +360,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaSparkUsingStructuredStreaming.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="1513">
           <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
         </state>
       </provider>
