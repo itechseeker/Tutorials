@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc57f0a9-5921-494d-8418-b557a8cf4bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DFProcessing$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DFProcessing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DataFrameEx$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DataFrameEx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DataLoader$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/DataLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/KafkaSparkSS$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/KafkaSparkSS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/SparkCoreNLP$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/SparkCoreNLP$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/SparkCoreNLP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/WordCount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/WordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/test$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/scala/test.class" beforeDir="false" />
-    </list>
+    <list default="true" id="dc57f0a9-5921-494d-8418-b557a8cf4bac" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +14,12 @@
     <session id="743836281">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -224,7 +208,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
+            <state relative-caret-position="480">
               <caret line="71" selection-start-line="71" selection-end-line="76" selection-end-column="21" />
             </state>
           </provider>
@@ -242,7 +226,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="153">
               <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding>
                 <element signature="e#20#36#0" expanded="true" />
@@ -312,6 +296,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,13 +342,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545234252806" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KafkaTutorials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebScrapingTutorials" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -476,9 +460,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.254251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -556,6 +540,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#20#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkCoreNLP.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -573,19 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
+        <state relative-caret-position="480">
           <caret line="71" selection-start-line="71" selection-end-line="76" selection-end-column="21" />
         </state>
       </provider>
