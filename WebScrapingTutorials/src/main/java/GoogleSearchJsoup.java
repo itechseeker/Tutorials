@@ -115,7 +115,7 @@ public class GoogleSearchJsoup {
 
     //Use this method if we dont need to specify the date range and sort order
     //(Since java doesnt support default value so we use the overloaded approach)
-    private static ArrayList<SearchResult> googleSearch(String searchKey,int numOfResult)
+    public static ArrayList<SearchResult> googleSearch(String searchKey,int numOfResult)
     {
         return  googleSearch(searchKey,numOfResult,"a",0);
     }
