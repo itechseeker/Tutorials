@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df28e980-6851-4ad4-bffa-4751168e04cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoilerpipeExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GoogleSearchJsoup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GoogleSearchJsoup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GoogleSearchJsoup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GoogleSearchJsoup.class" afterDir="false" />
     </list>
@@ -50,19 +53,32 @@
     <session id="207497533">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="158" />
+          <entry key="java" value="697" />
+          <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="158" />
+          <entry key="JAVA" value="697" />
+          <entry key="XML" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -72,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -81,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BasicProgram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="663">
               <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,22 +106,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GoogleSearchJsoup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-799">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="151">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#2582#2596#0" expanded="true" />
-                <element signature="e#3737#3738#0" expanded="true" />
-                <element signature="e#3793#3794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BoilerpipeExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,9 +157,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BasicProgram.java" />
         <option value="$PROJECT_DIR$/src/main/java/GoogleSearchJsoup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BoilerpipeExtractor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/TestClass.java" />
       </list>
     </option>
   </component>
@@ -144,8 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,6 +197,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebScrapingTutorials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebScrapingTutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,7 +211,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545714962026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545752933376" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -189,17 +229,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GoogleSearchJsoup">
+  <component name="RunManager" selected="Application.TestClass">
     <configuration name="BasicProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicProgram" />
-      <module name="WebScrapingTutorials" />
+      <module name="webscraping-tutorials" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoilerpipeExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BoilerpipeExtractor" />
+      <module name="webscraping-tutorials" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="GoogleSearchJsoup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GoogleSearchJsoup" />
-      <module name="WebScrapingTutorials" />
+      <module name="webscraping-tutorials" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <module name="webscraping-tutorials" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,9 +261,13 @@
     <list>
       <item itemvalue="Application.BasicProgram" />
       <item itemvalue="Application.GoogleSearchJsoup" />
+      <item itemvalue="Application.BoilerpipeExtractor" />
+      <item itemvalue="Application.TestClass" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.BoilerpipeExtractor" />
         <item itemvalue="Application.GoogleSearchJsoup" />
         <item itemvalue="Application.BasicProgram" />
       </list>
@@ -229,9 +287,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26234818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,8 +301,8 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.12295082" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32740214" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -263,16 +321,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BasicProgram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="663">
           <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -282,19 +333,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GoogleSearchJsoup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="151">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#2582#2596#0" expanded="true" />
-            <element signature="e#3737#3738#0" expanded="true" />
-            <element signature="e#3793#3794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BoilerpipeExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
