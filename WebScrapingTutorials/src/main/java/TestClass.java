@@ -1,4 +1,3 @@
-
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.parser.ParseContext;
@@ -27,11 +26,6 @@ public class TestClass {
         parser.parse(input, new BoilerpipeContentHandler(textHandler), metadata, context);
         System.out.println("Title: " + metadata.get("title"));
         System.out.println("Body: " + textHandler.toString());
-
-        input = url.openStream();
-        LinkContentHandler linkHandler = new LinkContentHandler();
-        parser.parse(input,linkHandler,metadata);
-        System.out.println(linkHandler.getLinks());
 
     }
 }
