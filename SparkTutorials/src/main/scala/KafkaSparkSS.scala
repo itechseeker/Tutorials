@@ -1,6 +1,7 @@
 package main.scala
 
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.from_json
 
 object KafkaSparkSS {
   def main(args: Array[String]): Unit = {
@@ -15,31 +16,38 @@ object KafkaSparkSS {
     //Implicit methods available in Scala for converting common Scala objects into DataFrames
     import spark.implicits._
 
-    //Subscribe Spark to topic 'test'
+    //Subscribe Spark to topic 'TwitterStreaming'
     val df=spark.readStream.format("kafka")
       .option("kafka.bootstrap.servers","localhost:9092")
-      .option("subscribe","test")
+      .option("subscribe","TwitterStreaming")
       .load()
 
-    //Convert received data value from ASCII to String
-    val lines=df.selectExpr( "CAST(value AS STRING)")
+    //Extract the schema from a sample of Twitter Data
+    val twitterData=spark.read.json("src/main/resources/data_source/twitter.json").toDF()
+    val twitterDataScheme=twitterData.schema
 
-    //Convert DataFrame to DataSet
-    val linesDataset=lines.as[String]
 
-    // Split the linesDataset into words
-    val words = linesDataset.flatMap(_.split(" "))
+    //Reading the streaming json data with its schema
+    val twitterStreamData=df.selectExpr( "CAST(value AS STRING) as jsonData")
+      .select(from_json($"jsonData",schema = twitterDataScheme).as("data"))
+      .select("data.*")
 
-    // Count each word
-    val wordCounts = words.groupBy("value").count()
+    // Display output (all columns)
+    val query = twitterStreamData
+      .writeStream
+      .outputMode("append")
+      .format("console")
+      .start()
 
-    // Display output
-    val query = wordCounts.writeStream
-      .outputMode("complete")
+    // Display output (only few columns)
+    val query2 = twitterStreamData.select("created_at","user.name","text","user.lang")
+      .writeStream
+      .outputMode("append")
       .format("console")
       .start()
 
     query.awaitTermination()
+    query2.awaitTermination()
   }
 
 }

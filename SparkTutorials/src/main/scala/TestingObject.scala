@@ -28,10 +28,20 @@ object TestingObject {
     df.select("ps_car_06_cat").show()
     println(df.agg(countDistinct("ps_car_06_cat")).first().get(0))
     println(df.select("ps_car_06_cat").distinct().count())*/
-    val start_time=System.currentTimeMillis()
+    /*val start_time=System.currentTimeMillis()
     DFProcessing.main(args)
     val end_time=System.currentTimeMillis()
-    println("Running time: "+(end_time-start_time)/1000)
+    println("Running time: "+(end_time-start_time)/1000)*/
+
+    val twitter=spark.read.json("src/main/resources/data_source/twitter.json").toDF()
+    twitter.printSchema()
+    println(twitter.show())
+
+    val user=twitter.select("user.name");
+    user.registerTempTable("User")
+    user.printSchema()
+    user.show()
+    //println(user.select("name").show())
 
   }
 

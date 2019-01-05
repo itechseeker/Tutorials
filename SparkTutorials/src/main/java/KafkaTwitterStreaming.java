@@ -12,7 +12,7 @@ import twitter4j.json.DataObjectFactory;
 public class KafkaTwitterStreaming {
     public static void main(String[] args) {
         //The Kafka Topic
-        String topicName="TwitterData";
+        String topicName="Big Data";
 
         //Define a Kafka Producer
         Producer<String, String> producer = new KafkaProducer<String, String>(getKafkaProp());
@@ -25,13 +25,19 @@ public class KafkaTwitterStreaming {
         StatusListener listener = new StatusListener(){
 
             public void onStatus(Status status) {
-                ProducerRecord data = new ProducerRecord("twitterData", DataObjectFactory.getRawJSON(status));
+                //Status To JSON String
+                String statusJson = DataObjectFactory.getRawJSON(status);
+                ProducerRecord data = new ProducerRecord("TwitterStreaming", statusJson);
+
+                System.out.println(statusJson);
+
+                //Send data
                 producer.send(data);
+
             }
 
             public void onException(Exception ex) {
                 ex.printStackTrace();
-
             }
 
             public void onDeletionNotice(StatusDeletionNotice statusDeletionNotice) {
@@ -53,7 +59,6 @@ public class KafkaTwitterStreaming {
 
         twitterStream.addListener(listener);
         twitterStream.filter(topicName);
-        //twitterStream.sample();
     }
 
     private static Properties getKafkaProp()
@@ -86,7 +91,8 @@ public class KafkaTwitterStreaming {
         //The String keys here are only examples and not valid.
         //You need to use your own keys
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
+              cb.setDebugEnabled(true)
+                .setJSONStoreEnabled(true)
                 .setOAuthConsumerKey("Fljmu9Wp1YVNXhqfmDHDyEAz9")
                 .setOAuthConsumerSecret("7CZDMiqhaeV7FOsUTYLgi9utt4eYEVaxqVuKZj5VGHLYqO0mLU")
                 .setOAuthAccessToken("1060702756430729216-1L9lL05TdEbanhGDFETkKMknmbw70w")
