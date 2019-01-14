@@ -7,7 +7,7 @@ class LifeCycleActor extends Actor{
   //Implement receive method
   def receive = {
     //Define how actor handle each message
-    case msg:String =>  println("Received message from "+sender().path.name+": "+msg)
+    case msg:String =>  println(self.path.name+" received a message from "+sender().path.name+": "+msg)
 
     // By default, an exception will be raised if actor received unknown message
     case _ => throw new Exception("Received unknown message!!!")

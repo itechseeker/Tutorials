@@ -7,7 +7,7 @@ class BasicActor extends Actor{
   //Implement receive method
   def receive = {
     //Define how actor handle each message
-    case msg:String => println("Received message from "+sender().path.name+": "+msg)
+    case msg:String => println(self.path.name+" received a message from "+sender().path.name+": "+msg)
 
     // default case
     case _ =>println("Received unknown message!!!")

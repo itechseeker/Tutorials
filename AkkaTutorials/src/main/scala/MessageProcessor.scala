@@ -11,19 +11,22 @@ class MessageActor extends Actor{
   def receive = {
     //Define how actor handle each message
     case msg:String =>
-      println("Received a message from "+sender().path.name+": "+msg)
+      println(self.path.name+" received a message from "+sender().path.name+": "+msg)
 
-      //Thread.sleep(1000)
+      //Send a reply message to sender actor
       val senderActor=sender()
-      senderActor ! "Message received !!"
+      senderActor ! self.path.name+" received message!!"
 
-      val child = context.actorOf(Props[Actor3], "ChildActor")
-      println("\nMessage Forwarding: ")
+      //Create a child actor using context.actorOf() method
+      val child = context.actorOf(Props[ChildActor], "ChildActor")
+
+      //Sending message to ChildActor using forward() method
+      println("\nSending message to ChildActor using forward: ")
       child forward(msg)
       Thread.sleep(1000)
 
-
-      println("\nMessage Sending: ")
+      //Sending message to ChildActor using tell() method
+      println("\nSending message to ChildActor using tell(): ")
       child ! msg
 
     // default case
@@ -31,12 +34,15 @@ class MessageActor extends Actor{
   }
 }
 
-
-class Actor3 extends Actor {
+//Define a ChildActor
+class ChildActor extends Actor {
+  //Implement receive method
   def receive = {
-    case msg: String =>
-      println("Received a message from "+sender().path.name+": "+msg)
-    case _ => println("Unknown message")
+    //Define how actor handle each message
+    case msg:String => println(self.path.name+" received a message from "+sender().path.name+": "+msg)
+
+    // default case
+    case _ =>println("Received unknown message!!!")
   }
 }
 
@@ -48,11 +54,9 @@ object MessageProcessor {
     //Create a BasicActor called "TestActor"
     var actor = actorSystem.actorOf(Props[MessageActor],"MessageActor")
 
-    //Sending some messages using !
-    //val future=actor.ask("Lets meet at 1PM")(5 seconds)
-
+    //Sending a message using ask() method and wait for a reply
     implicit val timeout = Timeout(10 seconds);
-    val future = actor ? "Hello Akka";
+    val future = actor ? "Hello from Actor.noSender";
     val result = Await.result(future, timeout.duration);
 
     println("Reply message: "+result)
