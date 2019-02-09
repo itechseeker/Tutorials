@@ -18,7 +18,7 @@ public class BasicProgramJava {
         Session session = cluster.connect();
 
         //Query to drop the keyspace
-        query="DROP KEYSPACE testkeyspace;";
+        query="DROP KEYSPACE IF EXISTS testkeyspace;";
 
         //Executing the query
         session.execute(query);

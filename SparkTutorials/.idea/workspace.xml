@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc57f0a9-5921-494d-8418-b557a8cf4bac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../KafkaTutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTutorials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KafkaTwitterStreaming$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KafkaTwitterStreaming$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KafkaTwitterStreaming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebScrapingTutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScrapingTutorials/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebScrapingTutorials/src/main/java/RSSProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScrapingTutorials/src/main/java/RSSProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebScrapingTutorials/target/classes/RSSProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WebScrapingTutorials/target/classes/RSSProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/employees.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/people.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/people_csvDF1/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/people_csvDF1/.part-00000-4e5c4d37-3fc4-4b92-940f-b11447d6f2e0-c000.json.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/people_csvDF1/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/people_csvDF1/part-00000-4e5c4d37-3fc4-4b92-940f-b11447d6f2e0-c000.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/twitter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/resources/data_source/users.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/scala/SparkCassandra.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/scala/TestingObject.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/src/main/java/BasicProgramJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/java/BasicProgramJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/src/main/scala/BasicProgram.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/src/main/scala/BasicProgram.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CassandraTutorials/target/classes/BasicProgramJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CassandraTutorials/target/classes/BasicProgramJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -126,26 +136,28 @@
     <session id="1215162463">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="2" />
           <entry key="json" value="1" />
-          <entry key="scala" value="6" />
+          <entry key="scala" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="Scala" value="6" />
+          <entry key="Scala" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -215,11 +227,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" selection-start-line="78" selection-end-line="83" selection-end-column="21" />
+            <state relative-caret-position="33">
+              <caret line="34" selection-start-line="34" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/DataLoader.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/DataFrameEx.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -227,7 +257,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/KafkaTwitterStreaming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="60">
               <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -239,17 +269,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/KafkaSparkSS.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="40" selection-start-line="49" selection-start-column="10" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/SparkCoreNLP.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -257,8 +278,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TestingObject.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -317,10 +347,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1192" />
-    <option name="y" value="40" />
-    <option name="width" value="1289" />
-    <option name="height" value="555" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1299" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -329,6 +359,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,12 +416,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546680521279" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549626080400" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CassandraTutorials" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -420,7 +450,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaSparkSS">
+  <component name="RunManager" selected="Application.TestingObject">
     <configuration name="KafkaSparkSS" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="main.scala.KafkaSparkSS" />
       <module name="SparkTutorials" />
@@ -483,8 +513,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KafkaSparkSS" />
         <item itemvalue="Application.TestingObject" />
+        <item itemvalue="Application.KafkaSparkSS" />
         <item itemvalue="Application.KafkaTwitterStreaming" />
         <item itemvalue="Application.KafkaTwitterStreaming (1)" />
         <item itemvalue="Application.TestClass" />
@@ -505,9 +535,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28810853" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -516,7 +546,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878544" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.94375" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.24959217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,9 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/DataFrameEx.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/DataLoader.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/test.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -571,16 +598,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestClass.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/data_source/twitter.json" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkCoreNLP.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" selection-start-line="78" selection-end-line="83" selection-end-column="21" />
+        <state relative-caret-position="15">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaTwitterStreaming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="60">
           <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -588,24 +615,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TestingObject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/KafkaSparkSS.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="40" selection-start-line="49" selection-start-column="10" selection-end-line="53" />
+        <state relative-caret-position="180">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkCoreNLP.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/DFProcessing.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="60">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TestingObject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/DataLoader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/DataFrameEx.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="34" selection-start-line="34" selection-end-line="40" />
         </state>
       </provider>
     </entry>

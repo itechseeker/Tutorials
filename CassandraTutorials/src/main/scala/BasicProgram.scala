@@ -8,7 +8,7 @@ object BasicProgram {
 
 
     val set = session.execute("SELECT * FROM emp;");
-    System.out.println(set);
+    System.out.println(set.all());
 
   }
 
